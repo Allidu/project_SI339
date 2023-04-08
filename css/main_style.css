@@ -1,0 +1,25 @@
+
+.gallery > *{
+    width: 100%;
+   margin: auto;
+   border: 10px lightgreen solid;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 25% 40% 25%;
+  align-content: space-evenly;
+  gap: 10px;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.gallery > :nth-child(4){
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.gallery > :nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
