@@ -1,25 +1,66 @@
 
-.gallery > *{
-    width: 100%;
-   margin: auto;
-   border: 10px lightgreen solid;
-}
-.gallery {
-  display: grid;
-  grid-template-columns: 25% 40% 25%;
-  align-content: space-evenly;
-  gap: 10px;
-  background-color: lightblue;
-  padding: 10px;
+.head{
+  margin: 1vw;
+  padding: 5vw;
+
 }
 
-.gallery > :nth-child(4){
-    grid-column-start: 2;
-    grid-column-end: 3;
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  flex-wrap: wrap;
 }
-.gallery > :nth-child(5){
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
+.container > *{
+  width: 90%;
+  flex: 1 1 0;
 }
+.block{
+  display: flex;
+  flex-direction: column;
+  border: solid #ABBD9A 2px;
+  margin: 10px;
+}
+
+
+.text{
+  background-color: #FCFBF4;;
+  padding: 1vw;
+}
+.name{
+  background-color: #d9f0c1;
+}
+
+.name , .text{
+  width: 100%;
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+ul{
+  text-align: left;
+}
+
+
+@media screen and (min-device-width: 600px) { 
+  .block{
+    flex-direction: row;
+  }
+  .block:nth-child(2n){
+    flex-direction: row-reverse;
+  }
+  
+  
+}
+
+@media screen and (min-device-width: 1025px) { 
+
+  .container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+}
+

@@ -1,0 +1,26 @@
+.navbar-custom{
+    background-color: #d9f0c1;
+
+}
+nav .navbar-nav li a{
+    color: black !important;
+    display: inline-block;
+    margin: 5px;
+    
+}
+nav .navbar-nav li a:hover:not(.active a){
+    text-decoration: underline;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+nav .navbar-nav .active a {
+    background-color: white;
+    border-radius: 10px;   
+}
+
+.footer{
+    
+    height: 7vh;
+    background-color: #d9f0c1;
+}
